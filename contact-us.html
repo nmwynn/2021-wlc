@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    
+    Web pages for educational purposes, all content is to be considered fictional. 
+	
+    Author: Noah Wynn
+	Term and Year: Fall 2021
+
+    Filename: contact-us.html
+   -->
+    <meta name="keywords" content="Lawncare, Mow, Mowing, Auburn" />
+   <title>Contact Us</title>
+   <link href="css/base.css" rel="stylesheet"/>
+	<link href="css/layout.css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+	
+	   <header>
+		  <a href="index.html"><img src="images/wlc_logo.JPG" 
+			alt="Wynn Lawn Care Logo" class="center"/></a>
+	   </header>
+	   
+	   <nav>
+			 <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="pricing.html">Pricing</a></li>
+				<li><a id="current" href="contact-us.html">Contact Us</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+			 </ul>
+		 </nav>
+	   
+		<sidebar>
+				<h1>Troy Wynn</h1>
+				<p>Owner/Operator</p>
+				<p>&nbsp</p>
+				<p>Phone: <a href="tel:+14202478865">420-247-8865</a></p>
+				<p>Email: <a href="mailto:troy@wlc.com">troy@wlc.com</a></p>
+				<div>
+					<a id="twitter" href="https://twitter.com/?lang=en"><img src="images/twittericon.png" 
+					alt="facebook"/></a>
+					<a id="social" href="https://www.facebook.com/"><img src="images/fbicon.png" 
+					alt="Facebook"/></a>
+				</div>
+					
+		</sidebar>
+	   
+		<article id="cu">
+				<form id="quote-req" action="quote.php" method="post">
+					<p>Please enter quote inquiries or other questions below:</p>
+					
+					<fieldset id="contactInfo">
+						<div class="formRow">
+							<label for="name">Name*</label>
+							<input name="name" id="name" type="text" placeholder="First Last">
+						</div>
+						<div class="formRow">
+							<label for="phone">Phone*</label>
+							<input name="phone" id="phone" type="text" placeholder="(xxx)-xxx-xxxx">
+						</div>
+						<div class="formRow">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="text" placeholder="email@gmail.com">
+						</div>
+						<div class="formRow">
+							<label for="service">Service Type</label>
+							<select name="service" id="service">
+								<option value="pckg1">Green Package</option>
+								<option value="pckg2">Summer Package</option>
+								<option value="pckg3">Fall Package</option>
+								<option value="pckg4">One-Time Mowing</option>
+								<option value="pckg5">General Inquiry</option>
+							</select>
+						</div>
+						<div class="formRow">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" placeholder="Please enter your inquiry or additional details here.">
+							</textarea>
+						</div>
+						<div id="buttons">
+							<input type="submit" value="Submit Inquiry">
+							<input type="cancel" value="Cancel">
+						</div>
+		</article>
+		<footer>
+		  Wynn Lawn Care 	&#9830; <a href="https://www.google.com/maps">1200 12th St, Auburn NE &nbsp; 68305</a> 	&#9830; <a href="tel:+14202478865">420-247-8865</a>
+		</footer>
+</body>
+</html>
+
+
+
+
